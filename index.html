@@ -1,5 +1,40 @@
 <html>
+<head>
+<script type="application/javascript">
+const showDiv = (div_id) => {
+  const divs = document.getElementsByTagName("div");
+  for (div of divs) {
+    console.log(div);
+    if (div.id === div_id.toString()) {
+      div.style.display = "block";
+    }
+    else {
+      div.style.display = "none";
+    }
+  }
+};
+</script>
+</head>
 <body>
 Test Page!
+
+<div id="1">
+This is question 1.
+<button onclick="showDiv(2)">Show 2</button>
+<button onclick="showDiv(3)">Show 3</button>
+</div>
+
+<div id="2">
+This is question 2.
+<button onclick="showDiv(1)">Show 1</button>
+<button onclick="showDiv(3)">Show 3</button>
+</div>
+
+<div id="3">
+This is question 3.
+<button onclick="showDiv(1)">Show 1</button>
+<button onclick="showDiv(2)">Show 2</button>
+</div>
+
 </body>
 </html>
