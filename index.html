@@ -16,25 +16,45 @@ const showDiv = (div_id) => {
 </script>
 </head>
 <body>
-Test Page!
+<h1>The Coding Adventure</h1>
+
+<p>Figure out how to make a choose your own adventure game before it is too late!</p>
+
+<hr/>
 
 <div id="1">
-This is question 1.
-<button onclick="showDiv(2)">Show 2</button>
-<button onclick="showDiv(3)">Show 3</button>
+  <p>You find yourself dreaming of learning to code and making a video game. Suddenly you find a website that teaches how to make a choose-you-own-adventure style game. What will you do?</p>
+
+  <button onclick="showDiv(2)">Follow its examples!</button><br/>
+  <button onclick="showDiv(3)">I can't read. Do nothing.</button><br/>
+  <button onclick="showDiv(3)">Oh, something is on the TV. Let's stare at it.</button><br/>
 </div>
 
-<div id="2">
-This is question 2.
-<button onclick="showDiv(1)">Show 1</button>
-<button onclick="showDiv(3)">Show 3</button>
+<div id="2" style="display:none;">
+  <p>You quickly learn about HTML tags such as &lt;p&gt;, &lt;button&gt;, and &lt;div&gt;. You also learn just a bit of JavaScript to use the <code>showDiv()</code> function.</p>
+
+  <button onclick="showDiv(4)">Open your index.html file in a web browser</button><br/>
+  <button onclick="showDiv(5)">Save your index.html file in GitHub, and use GitHub Pages to host it for the world to see</button><br/>
 </div>
 
-<div id="3">
-This is question 3.
-<button onclick="showDiv(1)">Show 1</button>
-<button onclick="showDiv(2)">Show 2</button>
+<div id="3" style="display:none;">
+  <p>You are distracted for a few minutes and forget what you wanted to do. You've failed to learn how to program.</p>
+
+  <p>Refresh the page to try again</p>
 </div>
 
+<div id="4" style="display:none;">
+  <p>You choose your own adventure game loads and you play it! It is both hilarious and fun. Everyone in your house thinks you did an awesome job.</p>
+
+  <p>You win!</p>
+</div>
+
+<div id="5" style="display:none;">
+  <p>You choose your own adventure game loads and you play it! It is really fun. You also show your friends at school on their Chromebooks and they play it too. Everyone thinks you did an awesome job. Some friends even have ideas that you might add.</p>
+
+  <p>You show some parents too because you remember your URL that shows the game. They play on their cells phones and have a blast. Eventually, your game goes viral and you become a famous YouTube streamer that plays your game.</p>
+
+  <p>You win! You are also rich and famous!</p>
+</div>
 </body>
 </html>
